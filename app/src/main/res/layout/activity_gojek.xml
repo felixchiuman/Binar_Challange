@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GojekActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/search_profile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/green_gojek"
+            android:weightSum="100">
+            <EditText
+                android:layout_weight="100"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edit_text"
+                android:drawableStart="@drawable/ic_baseline_search_24"
+                android:drawablePadding="10dp"
+                android:paddingStart="10dp"
+                android:hint="@string/cari_layanan_makanan_tujuan"
+                android:textSize="16sp"
+                android:textColor="@color/grey2"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                android:background="@color/green_gojek" />
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_corner">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                app:layout_constraintStart_toStartOf="@id/constraint_blue"
+                app:layout_constraintTop_toTopOf="@id/constraint_blue"
+                app:layout_constraintBottom_toBottomOf="@id/constraint_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"
+                android:background="@drawable/layout_corner_white"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_gopay_logo"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rp109_048"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/klik_cek_riwayat"
+                    android:textColor="@color/green_gojek"
+                    android:textStyle="bold"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+           <ImageButton
+               android:id="@+id/pay"
+               app:layout_constraintStart_toEndOf="@id/linear"
+               app:layout_constraintTop_toTopOf="@id/constraint_blue"
+               app:layout_constraintBottom_toBottomOf="@id/constraint_blue"
+               android:layout_marginStart="32sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_baseline_arrow_upward_30"
+               android:background="@drawable/rounded_image_button" />
+
+            <ImageButton
+                android:id="@+id/isi_saldo"
+                app:layout_constraintStart_toEndOf="@id/pay"
+                app:layout_constraintTop_toTopOf="@id/constraint_blue"
+                app:layout_constraintBottom_toBottomOf="@id/constraint_blue"
+                app:layout_constraintEnd_toStartOf="@id/explore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_add_30"
+                android:background="@drawable/rounded_image_button" />
+
+            <ImageButton
+                android:id="@+id/explore"
+                app:layout_constraintEnd_toEndOf="@id/constraint_blue"
+                app:layout_constraintTop_toTopOf="@id/constraint_blue"
+                app:layout_constraintBottom_toBottomOf="@id/constraint_blue"
+                android:layout_marginEnd="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_rocket_svgrepo_com"
+                android:background="@drawable/rounded_image_button" />
+
+            <TextView
+                android:id="@+id/text_bayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="@string/bayar"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="48dp"
+                app:layout_constraintStart_toEndOf="@id/linear"
+                app:layout_constraintTop_toTopOf="@id/constraint_blue"
+                app:layout_constraintBottom_toBottomOf="@id/constraint_blue"/>
+
+            <TextView
+                android:id="@+id/text_isi_saldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/isi_saldo"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="48dp"
+                app:layout_constraintStart_toEndOf="@id/pay"
+                app:layout_constraintTop_toTopOf="@id/constraint_blue"
+                app:layout_constraintBottom_toBottomOf="@id/constraint_blue"
+                app:layout_constraintEnd_toStartOf="@id/explore"/>
+
+            <TextView
+                android:id="@+id/teks_explore"
+                app:layout_constraintEnd_toEndOf="@id/constraint_blue"
+                app:layout_constraintTop_toTopOf="@id/constraint_blue"
+                app:layout_constraintBottom_toBottomOf="@id/constraint_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/eksplor"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageButton
+            android:id="@+id/goride_button"
+            app:layout_constraintTop_toBottomOf="@id/constraint_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_image_button_green"
+            android:src="@drawable/ic_baseline_sports_motorsports_36"/>
+
+        <ImageButton
+            android:id="@+id/gosend_button"
+            app:layout_constraintTop_toBottomOf="@id/constraint_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_image_button_green"
+            android:src="@drawable/ic_baseline_forward_to_inbox_36"/>
+
+        <ImageButton
+            android:id="@+id/gocar_button"
+            app:layout_constraintTop_toBottomOf="@id/constraint_blue"
+            app:layout_constraintStart_toEndOf="@id/goride_button"
+            app:layout_constraintEnd_toStartOf="@+id/gofood_button"
+            android:layout_marginTop="16dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_image_button_green"
+            android:src="@drawable/ic_baseline_directions_car_36"/>
+
+        <ImageButton
+            android:id="@+id/gofood_button"
+            app:layout_constraintTop_toBottomOf="@id/constraint_blue"
+            app:layout_constraintEnd_toStartOf="@id/gosend_button"
+            app:layout_constraintStart_toEndOf="@id/gocar_button"
+            android:layout_marginTop="16dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_image_button_red"
+            android:src="@drawable/ic_baseline_fastfood_36"/>
+
+        <ImageButton
+            android:id="@+id/gomart_button"
+            app:layout_constraintTop_toBottomOf="@id/goride_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/gocar_button"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_image_button_red"
+            android:src="@drawable/ic_baseline_shopping_basket_36"/>
+
+        <ImageButton
+            android:id="@+id/gopulsa_button"
+            app:layout_constraintTop_toBottomOf="@id/gocar_button"
+            app:layout_constraintStart_toEndOf="@id/gomart_button"
+            app:layout_constraintEnd_toStartOf="@+id/peduli_lingdungi_button"
+            android:layout_marginTop="32dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_image_button_blue"
+            android:src="@drawable/ic_baseline_smartphone_36"/>
+
+        <ImageButton
+            android:id="@+id/other_button"
+            app:layout_constraintTop_toBottomOf="@id/gosend_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_image_button_grey"
+            android:src="@drawable/ic_baseline_more_horiz_36"/>
+
+        <ImageButton
+            android:id="@+id/peduli_lingdungi_button"
+            app:layout_constraintTop_toBottomOf="@id/gofood_button"
+            app:layout_constraintEnd_toStartOf="@id/other_button"
+            app:layout_constraintStart_toEndOf="@id/gopulsa_button"
+            android:layout_marginTop="32dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_image_button_blue"
+            android:src="@drawable/ic_peduli_lindungi_icon"/>
+
+        <TextView
+            android:id="@+id/text_goride"
+            app:layout_constraintTop_toBottomOf="@id/goride_button"
+            app:layout_constraintBottom_toTopOf="@id/gomart_button"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goride"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/text_gocar"
+            app:layout_constraintTop_toBottomOf="@id/gocar_button"
+            app:layout_constraintBottom_toTopOf="@id/gopulsa_button"
+            app:layout_constraintStart_toEndOf="@id/text_goride"
+            app:layout_constraintEnd_toStartOf="@id/text_gofood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:text="@string/gocar"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/text_gofood"
+            app:layout_constraintTop_toBottomOf="@id/gofood_button"
+            app:layout_constraintBottom_toTopOf="@id/peduli_lingdungi_button"
+            app:layout_constraintStart_toEndOf="@id/text_gocar"
+            app:layout_constraintEnd_toStartOf="@id/text_gosend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:text="@string/gofood"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/text_gosend"
+            app:layout_constraintTop_toBottomOf="@id/gosend_button"
+            app:layout_constraintBottom_toTopOf="@id/other_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gosend"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/text_gomart"
+            app:layout_constraintTop_toBottomOf="@id/gomart_button"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gomart"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/text_gopulsa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="4sp"
+            android:text="@string/gopulsa"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@id/text_gofood"
+            app:layout_constraintStart_toEndOf="@id/text_gomart"
+            app:layout_constraintTop_toBottomOf="@id/gopulsa_button" />
+
+        <TextView
+            android:id="@+id/text_checkin"
+            app:layout_constraintTop_toBottomOf="@id/peduli_lingdungi_button"
+            app:layout_constraintStart_toEndOf="@id/text_gocar"
+            app:layout_constraintEnd_toStartOf="@id/text_gosend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="4sp"
+            android:text="@string/check_in"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/text_other"
+            app:layout_constraintTop_toBottomOf="@id/other_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="30sp"
+            android:layout_marginTop="4sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/other"
+            android:textColor="@color/black"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/progression"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_corner_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/text_gopulsa"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                app:layout_constraintStart_toStartOf="@+id/progression"
+                app:layout_constraintTop_toTopOf="@id/progression"
+                app:layout_constraintBottom_toBottomOf="@id/progression"
+                android:id="@+id/star_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:src="@drawable/ic_baseline_star_36"/>
+
+            <TextView
+                android:id="@+id/harta_karun"
+                app:layout_constraintTop_toTopOf="@id/progression"
+                app:layout_constraintStart_toEndOf="@id/star_icon"
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="36 XP lagi ada Harta Karun"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                app:layout_constraintTop_toBottomOf="@id/harta_karun"
+                app:layout_constraintStart_toEndOf="@id/star_icon"
+                app:layout_constraintEnd_toEndOf="@id/progression"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="96dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:progress="25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                app:layout_constraintStart_toEndOf="@id/progress_bar"
+                app:layout_constraintTop_toTopOf="@id/progression"
+                app:layout_constraintBottom_toBottomOf="@id/progression"
+                android:id="@+id/next_button"
+                android:layout_width="62dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:src="@drawable/ic_baseline_chevron_right_36" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/akses_cepat"
+            app:layout_constraintTop_toBottomOf="@id/progression"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akses Cepat"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/menu_akses_cepat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/akses_cepat"
+            android:background="@drawable/layout_corner_white"
+            >
+            <ImageButton
+                android:layout_margin="4dp"
+                android:id="@+id/discount_icon"
+                app:layout_constraintStart_toStartOf="@id/menu_akses_cepat"
+                app:layout_constraintTop_toTopOf="@id/menu_akses_cepat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_discount_24"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                android:id="@+id/voucher_nganggur_text"
+                app:layout_constraintStart_toEndOf="@id/discount_icon"
+                app:layout_constraintTop_toTopOf="@id/menu_akses_cepat"
+                app:layout_constraintBottom_toBottomOf="@id/discount_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:text="Ada voucher nganggur, nih"/>
+
+            <ImageButton
+                android:id="@+id/discount_next"
+                app:layout_constraintEnd_toEndOf="@id/menu_akses_cepat"
+                app:layout_constraintTop_toTopOf="@id/menu_akses_cepat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4sp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_baseline_chevron_right_24"/>
+
+            <ImageButton
+                android:id="@+id/fast_food_red"
+                app:layout_constraintTop_toBottomOf="@id/discount_icon"
+                app:layout_constraintStart_toStartOf="@id/menu_akses_cepat"
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_fastfood_24"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                app:layout_constraintStart_toEndOf="@id/fast_food_red"
+                app:layout_constraintTop_toTopOf="@id/menu_akses_cepat"
+                app:layout_constraintBottom_toBottomOf="@id/menu_akses_cepat"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="56sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restoran terdekat" />
+
+            <ImageButton
+                android:id="@+id/gofood_next"
+                app:layout_constraintEnd_toEndOf="@id/menu_akses_cepat"
+                app:layout_constraintTop_toBottomOf="@id/discount_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4sp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_baseline_chevron_right_24"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/logo_gopay"
+            app:layout_constraintTop_toBottomOf="@id/menu_akses_cepat"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gopay_logo"/>
+
+        <TextView
+            android:id="@+id/text_promo"
+            app:layout_constraintTop_toBottomOf="@id/logo_gopay"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8sp"
+            android:layout_marginStart="16sp"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/promo_dari_gopay_jago_untuk_kamu_ndataptkan_voucher_rp_100rb_dan_bunga_7_sekarang_juga"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_gopay_jago_jurus_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_promo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

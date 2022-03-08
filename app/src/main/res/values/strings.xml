@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Binar Challange</string>
+    <string name="tokopedia">Tokopedia</string>
+    <string name="gojek">Gojek</string>
+    <string name="cari_layanan_makanan_tujuan"><![CDATA[Cari layanan, makanan, & tujuan]]></string>
+    <string name="klik_cek_riwayat"><![CDATA[Klik & cek riwayat]]></string>
+    <string name="rp109_048">Rp109.048</string>
+    <string name="isi_saldo">Isi Saldo</string>
+    <string name="bayar">Bayar</string>
+    <string name="goride">GoRide</string>
+    <string name="gocar">GoCar</string>
+    <string name="gofood">GoFood</string>
+    <string name="gosend">GoSend</string>
+    <string name="gomart">GoMart</string>
+    <string name="gopulsa">GoPulsa</string>
+    <string name="check_in">Check In</string>
+    <string name="other">Other</string>
+    <string name="eksplor">Eksplor</string>
+    <string name="promo_dari_gopay_jago_untuk_kamu_ndataptkan_voucher_rp_100rb_dan_bunga_7_sekarang_juga"><b>Promo dari Gopay Jago untuk kamu!</b> \nDataptkan voucher Rp 100rb dan bunga 7% sekarang juga!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
