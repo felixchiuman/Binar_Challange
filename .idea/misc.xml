@@ -8,9 +8,17 @@
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_arrow_up_circle_svgrepo_com.xml" value="0.187" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.187" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_baseline_add_30.xml" value="0.187" />
+        <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_baseline_airplanemode_active_36.xml" value="0.19" />
+        <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_baseline_email_48.xml" value="0.121" />
+        <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.19" />
+        <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_baseline_insert_photo_24.xml" value="0.19" />
+        <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_baseline_smartphone_36.xml" value="0.19" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_eksplor.xml" value="0.187" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_gopay_logo.xml" value="0.187" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_goride_3d.xml" value="0.187" />
+        <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_official.xml" value="0.19" />
+        <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_official_24.xml" value="0.1" />
+        <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_official_36.xml" value="0.19" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_peduli_lindungi_icon.xml" value="0.187" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/ic_rocket_svgrepo_com.xml" value="0.187" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/layout_corner.xml" value="0.187" />
@@ -18,6 +26,7 @@
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/layout_corner_white.xml" value="0.187" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/linear_leyout_rounded.xml" value="0.187" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/rounded_edit_text.xml" value="0.187" />
+        <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/rounded_edit_text_tokopedia.xml" value="0.121" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/rounded_image_button.xml" value="0.187" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/rounded_image_button_blue.xml" value="0.187" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/rounded_image_button_green.xml" value="0.187" />
@@ -26,12 +35,13 @@
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/drawable/rounded_image_color_blur.xml" value="0.187" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/layout/activity_gojek.xml" value="0.264" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/layout/activity_tokopedia.xml" value="0.20521590423257802" />
+        <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/layout/activity_tokopedia.xml" value="0.23959827833572453" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/layout/gojek.xml" value="0.20521590423257802" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/layout/gopay_swipe.xml" value="0.20521590423257802" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/layout/tokopedia.xml" value="0.20521590423257802" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/menu/bottom_menu.xml" value="0.20521590423257802" />
         <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/menu/nav_bar.xml" value="0.20521590423257802" />
+        <entry key="..\:/Andorid Studio Project/BinarChallange/app/src/main/res/menu/nav_bar_2.xml" value="0.20521590423257802" />
       </map>
     </option>
   </component>

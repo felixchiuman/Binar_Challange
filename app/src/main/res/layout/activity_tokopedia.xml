@@ -6,4 +6,586 @@
     android:layout_height="match_parent"
     tools:context=".TokopediaActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/green">
+
+        <EditText
+            android:id="@+id/search_item"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_weight="100"
+            android:layout_width="192dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text_tokopedia"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:hint="Cari Powerbank"
+            android:textSize="16sp"
+            android:textColor="@color/grey2"
+            />
+        <ImageButton
+            android:id="@+id/mail"
+            app:layout_constraintStart_toEndOf="@id/search_item"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_email_36"
+            android:background="@color/green"/>
+
+        <ImageButton
+            android:id="@+id/bell"
+            app:layout_constraintStart_toEndOf="@id/mail"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/shopping_cart"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_notifications_36"
+            android:background="@color/green"/>
+
+        <ImageButton
+            android:id="@+id/shopping_cart"
+            app:layout_constraintStart_toEndOf="@id/bell"
+            app:layout_constraintEnd_toStartOf="@id/more"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_shopping_cart_36"
+            android:background="@color/green"/>
+
+        <ImageButton
+            android:id="@+id/more"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_list_36"
+            android:background="@color/green"/>
+
+        <ImageView
+            android:id="@+id/location_mark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_item"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="8sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_location_on_24"/>
+
+        <TextView
+            android:id="@+id/location_text"
+            app:layout_constraintTop_toBottomOf="@id/search_item"
+            app:layout_constraintStart_toEndOf="@id/location_mark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="8sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dikirim_ke_kuvukiland"
+            android:textColor="@color/white"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/status_bar"
+                android:weightSum="100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="16dp"
+                android:background="@drawable/layout_corner_white">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/wallet_data"
+                    android:layout_weight="50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/wallet_img"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_margin="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_account_balance_wallet_24"/>
+
+                    <TextView
+                        android:id="@+id/wallet"
+                        app:layout_constraintStart_toEndOf="@id/wallet_img"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_margin="8sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp50.000"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/wallet_img"
+                        app:layout_constraintTop_toBottomOf="@id/wallet"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginBottom="8sp"
+                        android:layout_marginStart="8sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50.000 Coins"
+                        android:textColor="@color/black"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/member_data"
+                    android:layout_weight="50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/member_img"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_margin="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_hexagon_24"/>
+
+                    <TextView
+                        android:id="@+id/member"
+                        app:layout_constraintStart_toEndOf="@id/member_img"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_margin="8sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Member Gold"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/member_img"
+                        app:layout_constraintTop_toBottomOf="@id/member"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginBottom="8sp"
+                        android:layout_marginStart="8sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20 Kupom"
+                        android:textColor="@color/black"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/status_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:layout_marginStart="8dp"
+                        android:id="@+id/official"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_official_36"
+                        android:background="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/official_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/official"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:text="Official\nStore"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:id="@+id/menu_list"
+                        app:layout_constraintStart_toEndOf="@id/official"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/basket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_menu_book_36"
+                        android:background="#FFFFFF"
+                        android:layout_marginStart="32dp"/>
+
+                    <TextView
+                        android:id="@+id/lihat_semua"
+                        app:layout_constraintStart_toEndOf="@id/official_text"
+                        app:layout_constraintTop_toBottomOf="@id/menu_list"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="20sp"
+                        android:text="Lihat\nSemua"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:id="@+id/basket"
+                        app:layout_constraintStart_toEndOf="@+id/menu_list"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_shopping_basket_36"
+                        android:background="#FFFFFF"
+                        android:layout_marginStart="32dp"/>
+
+                    <TextView
+                        android:id="@+id/kebutuhan"
+                        app:layout_constraintStart_toEndOf="@id/lihat_semua"
+                        app:layout_constraintTop_toBottomOf="@id/basket"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="20sp"
+                        android:text="Kebutuhan"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:id="@+id/smartphone"
+                        app:layout_constraintStart_toEndOf="@id/basket"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_smartphone_36"
+                        android:background="#FFFFFF"
+                        android:layout_marginStart="32dp"/>
+
+                    <TextView
+                        android:id="@+id/smartphone_text"
+                        app:layout_constraintStart_toEndOf="@id/kebutuhan"
+                        app:layout_constraintTop_toBottomOf="@id/smartphone"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="20sp"
+                        android:text="Phone &amp;Tablet"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:id="@+id/payment"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/smartphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_payments_36"
+                        android:background="#FFFFFF"
+                        android:layout_marginStart="32dp"/>
+
+                    <TextView
+                        android:id="@+id/payment_text"
+                        app:layout_constraintStart_toEndOf="@id/smartphone_text"
+                        app:layout_constraintTop_toBottomOf="@id/payment"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="20sp"
+                        android:text="Top-Up"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:id="@+id/tagihan"
+                        app:layout_constraintStart_toEndOf="@id/payment"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_attach_money_36"
+                        android:background="#FFFFFF"
+                        android:layout_marginStart="32dp"/>
+
+                    <TextView
+                        android:id="@+id/tagihan_text"
+                        app:layout_constraintStart_toEndOf="@id/payment_text"
+                        app:layout_constraintTop_toBottomOf="@id/tagihan"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="20sp"
+                        android:text="Keuangan"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:layout_marginEnd="4dp"
+                        android:id="@+id/airplane"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tagihan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_airplanemode_active_36"
+                        android:background="#FFFFFF"
+                        android:layout_marginStart="32dp"/>
+
+                    <TextView
+                        android:id="@+id/plane"
+                        app:layout_constraintStart_toEndOf="@id/tagihan_text"
+                        app:layout_constraintTop_toBottomOf="@id/airplane"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="20sp"
+                        android:text="Travel"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/promotion"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/horizontal_1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="128dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/promo_tokopedia"/>
+
+                    <ImageView
+                        app:layout_constraintStart_toEndOf="@id/imageView"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="128dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/promo_tokopedia"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/promotion">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:layout_marginStart="8dp"
+                        android:id="@+id/official_2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_official_36"
+                        android:background="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/official_text_2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/official_2"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:text="Official\nStore"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:id="@+id/menu_list_2"
+                        app:layout_constraintStart_toEndOf="@id/official_2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/basket_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_menu_book_36"
+                        android:background="#FFFFFF"
+                        android:layout_marginStart="32dp"/>
+
+                    <TextView
+                        android:id="@+id/lihat_semua_2"
+                        app:layout_constraintStart_toEndOf="@id/official_text_2"
+                        app:layout_constraintTop_toBottomOf="@id/menu_list_2"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="20sp"
+                        android:text="Lihat\nSemua"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:id="@+id/basket_2"
+                        app:layout_constraintStart_toEndOf="@+id/menu_list_2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_shopping_basket_36"
+                        android:background="#FFFFFF"
+                        android:layout_marginStart="32dp"/>
+
+                    <TextView
+                        android:id="@+id/kebutuhan_2"
+                        app:layout_constraintStart_toEndOf="@id/lihat_semua_2"
+                        app:layout_constraintTop_toBottomOf="@id/basket_2"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="20sp"
+                        android:text="Kebutuhan"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:id="@+id/smartphone_2"
+                        app:layout_constraintStart_toEndOf="@id/basket_2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/payment_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_smartphone_36"
+                        android:background="#FFFFFF"
+                        android:layout_marginStart="32dp"/>
+
+                    <TextView
+                        android:id="@+id/smartphone_text_2"
+                        app:layout_constraintStart_toEndOf="@id/kebutuhan_2"
+                        app:layout_constraintTop_toBottomOf="@id/smartphone_2"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="20sp"
+                        android:text="Phone &amp;Tablet"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+
+                    <ImageButton
+                        android:id="@+id/payment_2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/smartphone_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_payments_36"
+                        android:background="#FFFFFF"
+                        android:layout_marginStart="32dp"/>
+
+                    <TextView
+                        android:id="@+id/payment_text_2"
+                        app:layout_constraintStart_toEndOf="@id/smartphone_text_2"
+                        app:layout_constraintTop_toBottomOf="@id/payment_2"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="20sp"
+                        android:text="Top-Up"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:id="@+id/tagihan_2"
+                        app:layout_constraintStart_toEndOf="@id/payment_2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_attach_money_36"
+                        android:background="#FFFFFF"
+                        android:layout_marginStart="32dp"/>
+
+                    <TextView
+                        android:id="@+id/tagihan_text_2"
+                        app:layout_constraintStart_toEndOf="@id/payment_text_2"
+                        app:layout_constraintTop_toBottomOf="@id/tagihan_2"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="20sp"
+                        android:text="Keuangan"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:layout_marginEnd="4dp"
+                        android:id="@+id/airplane_2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tagihan_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_airplanemode_active_36"
+                        android:background="#FFFFFF"
+                        android:layout_marginStart="32dp"/>
+
+                    <TextView
+                        android:id="@+id/plane_2"
+                        app:layout_constraintStart_toEndOf="@id/tagihan_text_2"
+                        app:layout_constraintTop_toBottomOf="@id/airplane_2"
+                        android:layout_width="48sp"
+                        android:layout_height="48sp"
+                        android:layout_marginStart="20sp"
+                        android:text="Travel"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_tokopedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_bar_2"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
