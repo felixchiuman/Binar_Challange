@@ -31,7 +31,7 @@
             android:drawableStart="@drawable/ic_baseline_search_24"
             android:drawablePadding="10dp"
             android:paddingStart="10dp"
-            android:hint="Cari Powerbank"
+            android:hint="@string/cari_powerbank"
             android:textSize="16sp"
             android:textColor="@color/grey2"
             />
@@ -132,7 +132,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_margin="16dp"
-                android:background="@drawable/layout_corner_white">
+                android:background="@drawable/layout_corner_white"
+                android:baselineAligned="false">
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/wallet_data"
                     android:layout_weight="50"
@@ -155,7 +156,7 @@
                         android:layout_margin="8sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rp50.000"
+                        android:text="@string/rp50_000"
                         android:textStyle="bold"
                         android:textColor="@color/black"/>
 
@@ -379,31 +380,31 @@
                 android:id="@+id/promotion"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginEnd="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/horizontal_1">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/horizontal_1"
+                app:layout_constraintEnd_toEndOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginEnd="16dp"
                         android:id="@+id/imageView"
                         android:layout_width="match_parent"
                         android:layout_height="128dp"
+                        android:layout_marginStart="16dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/promo_tokopedia"/>
+                        android:src="@drawable/promo_tokopedia"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
                         app:layout_constraintStart_toEndOf="@id/imageView"
                         app:layout_constraintTop_toTopOf="parent"
                         android:layout_marginStart="16dp"
-                        android:layout_marginEnd="16dp"
                         android:id="@+id/imageView2"
                         android:layout_width="match_parent"
                         android:layout_height="128dp"
@@ -413,6 +414,7 @@
             </HorizontalScrollView>
 
             <HorizontalScrollView
+                android:id="@+id/horizontal_2"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
@@ -578,7 +580,142 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/video_menarik"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/horizontal_2"
+                android:layout_margin="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video meanrik untukmu"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <Button
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/horizontal_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Lihat Semua"
+                android:textColor="@color/green_gojek"
+                android:background="@color/white"
+                app:backgroundTint="@null"
+                android:textAllCaps="false"/>
+
+            <HorizontalScrollView
+                app:layout_constraintTop_toBottomOf="@+id/video_menarik"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/list_live_streaming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/live_streaming_1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="256dp"
+                        android:src="@drawable/tokopedia_live_pic"
+                        android:scaleType="fitXY"/>
+
+                    <ImageView
+                        android:id="@+id/live_streaming_2"
+                        app:layout_constraintStart_toEndOf="@id/live_streaming_1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="256dp"
+                        android:src="@drawable/tokopedia_live_pic"
+                        android:scaleType="fitXY"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+            <TextView
+                android:id="@+id/kejar_diskon_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/video_menarik"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="288sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kejar_diskon_nberakhir_dalam"
+                android:textColor="@color/black"/>
+
+            <TextView
+                app:layout_constraintStart_toEndOf="@id/kejar_diskon_text"
+                app:layout_constraintTop_toBottomOf="@id/video_menarik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="305sp"
+                android:text="  09 Menit 26 Detik  "
+                android:background="@drawable/layout_conner_red"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <Button
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/horizontal_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="315dp"
+                android:text="Lihat Semua"
+                android:textColor="@color/green_gojek"
+                android:background="@color/white"
+                app:backgroundTint="@null"
+                android:textAllCaps="false"/>
+
+            <HorizontalScrollView
+                app:layout_constraintTop_toBottomOf="@+id/kejar_diskon_text"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/kejar_diskon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/kejar_diskon_item_1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="256dp"
+                        android:src="@drawable/kejar_diskon_tokopedia"
+                        android:scaleType="fitXY"/>
+
+                    <ImageView
+                        android:id="@+id/kejar_diskon_item_2"
+                        app:layout_constraintStart_toEndOf="@+id/kejar_diskon_item_1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="256dp"
+                        android:src="@drawable/kejar_diskon_tokopedia"
+                        android:scaleType="fitXY"/>
+
+                    <ImageView
+                        android:id="@+id/kejar_diskon_item_3"
+                        app:layout_constraintStart_toEndOf="@+id/kejar_diskon_item_2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="256dp"
+                        android:src="@drawable/kejar_diskon_tokopedia"
+                        android:scaleType="fitXY"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </ScrollView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_tokopedia"

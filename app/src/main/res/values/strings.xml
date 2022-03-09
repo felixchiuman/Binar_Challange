@@ -20,4 +20,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dikirim_ke_kuvukiland">Dikirim ke <b>Kuvukiland</b></string>
+    <string name="cari_powerbank">Cari Powerbank</string>
+    <string name="rp50_000">Rp50.000</string>
+    <string name="kejar_diskon_nberakhir_dalam"><b>Kejar Diskon\n</b>Berakhir dalam</string>
 </resources>
