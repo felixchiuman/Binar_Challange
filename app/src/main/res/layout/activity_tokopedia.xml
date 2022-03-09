@@ -168,7 +168,7 @@
                         android:layout_marginStart="8sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="50.000 Coins"
+                        android:text="@string/_50_000_coins"
                         android:textColor="@color/black"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -194,7 +194,7 @@
                         android:layout_margin="8sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Member Gold"
+                        android:text="@string/member_gold"
                         android:textStyle="bold"
                         android:textColor="@color/black"/>
 
@@ -206,7 +206,7 @@
                         android:layout_marginStart="8sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="20 Kupom"
+                        android:text="@string/_20_kupom"
                         android:textColor="@color/black"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
@@ -221,7 +221,7 @@
                 android:layout_margin="16dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <ImageButton
@@ -240,7 +240,7 @@
                         app:layout_constraintTop_toBottomOf="@id/official"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:text="Official\nStore"
+                        android:text="@string/official_nstore"
                         android:textAlignment="center"
                         android:textColor="@color/black"/>
 
@@ -262,7 +262,7 @@
                         android:layout_width="48sp"
                         android:layout_height="48sp"
                         android:layout_marginStart="20sp"
-                        android:text="Lihat\nSemua"
+                        android:text="@string/lihat_nsemua"
                         android:textAlignment="center"
                         android:textColor="@color/black"/>
 
@@ -283,7 +283,7 @@
                         android:layout_width="48sp"
                         android:layout_height="48sp"
                         android:layout_marginStart="20sp"
-                        android:text="Kebutuhan"
+                        android:text="@string/kebutuhan"
                         android:textAlignment="center"
                         android:textColor="@color/black"/>
 
@@ -305,7 +305,7 @@
                         android:layout_width="48sp"
                         android:layout_height="48sp"
                         android:layout_marginStart="20sp"
-                        android:text="Phone &amp;Tablet"
+                        android:text="@string/phone_amp_tablet"
                         android:textAlignment="center"
                         android:textColor="@color/black"/>
 
@@ -326,7 +326,7 @@
                         android:layout_width="48sp"
                         android:layout_height="48sp"
                         android:layout_marginStart="20sp"
-                        android:text="Top-Up"
+                        android:text="@string/top_up"
                         android:textAlignment="center"
                         android:textColor="@color/black"/>
 
@@ -347,7 +347,7 @@
                         android:layout_width="48sp"
                         android:layout_height="48sp"
                         android:layout_marginStart="20sp"
-                        android:text="Keuangan"
+                        android:text="@string/keuangan"
                         android:textAlignment="center"
                         android:textColor="@color/black"/>
 
@@ -370,7 +370,7 @@
                         android:layout_width="48sp"
                         android:layout_height="48sp"
                         android:layout_marginStart="20sp"
-                        android:text="Travel"
+                        android:text="@string/travel"
                         android:textAlignment="center"
                         android:textColor="@color/black"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -388,7 +388,7 @@
                 app:layout_constraintEnd_toEndOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <ImageView
@@ -424,7 +424,7 @@
                 app:layout_constraintTop_toBottomOf="@id/promotion">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <ImageButton
@@ -443,7 +443,7 @@
                         app:layout_constraintTop_toBottomOf="@id/official_2"
                         android:layout_width="48sp"
                         android:layout_height="48sp"
-                        android:text="Official\nStore"
+                        android:text="@string/official_nstore"
                         android:textAlignment="center"
                         android:textColor="@color/black"/>
 
@@ -465,7 +465,7 @@
                         android:layout_width="48sp"
                         android:layout_height="48sp"
                         android:layout_marginStart="20sp"
-                        android:text="Lihat\nSemua"
+                        android:text="@string/lihat_nsemua"
                         android:textAlignment="center"
                         android:textColor="@color/black"/>
 
@@ -486,7 +486,7 @@
                         android:layout_width="48sp"
                         android:layout_height="48sp"
                         android:layout_marginStart="20sp"
-                        android:text="Kebutuhan"
+                        android:text="@string/kebutuhan"
                         android:textAlignment="center"
                         android:textColor="@color/black"/>
 
@@ -508,7 +508,7 @@
                         android:layout_width="48sp"
                         android:layout_height="48sp"
                         android:layout_marginStart="20sp"
-                        android:text="Phone &amp;Tablet"
+                        android:text="@string/phone_amp_tablet"
                         android:textAlignment="center"
                         android:textColor="@color/black"/>
 
@@ -530,7 +530,7 @@
                         android:layout_width="48sp"
                         android:layout_height="48sp"
                         android:layout_marginStart="20sp"
-                        android:text="Top-Up"
+                        android:text="@string/top_up"
                         android:textAlignment="center"
                         android:textColor="@color/black"/>
 
@@ -551,7 +551,7 @@
                         android:layout_width="48sp"
                         android:layout_height="48sp"
                         android:layout_marginStart="20sp"
-                        android:text="Keuangan"
+                        android:text="@string/keuangan"
                         android:textAlignment="center"
                         android:textColor="@color/black"/>
 
@@ -574,7 +574,7 @@
                         android:layout_width="48sp"
                         android:layout_height="48sp"
                         android:layout_marginStart="20sp"
-                        android:text="Travel"
+                        android:text="@string/travel"
                         android:textAlignment="center"
                         android:textColor="@color/black"/>
 
@@ -588,7 +588,7 @@
                 android:layout_margin="16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Video meanrik untukmu"
+                android:text="@string/video_menarik_untukmu"
                 android:textColor="@color/black"
                 android:textStyle="bold"/>
 
@@ -598,7 +598,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:text="Lihat Semua"
+                android:text="@string/lihat_semua"
                 android:textColor="@color/green_gojek"
                 android:background="@color/white"
                 app:backgroundTint="@null"
@@ -613,7 +613,7 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/list_live_streaming"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <ImageView
@@ -654,7 +654,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16sp"
                 android:layout_marginTop="305sp"
-                android:text="  09 Menit 26 Detik  "
+                android:text="@string/_09_menit_26_detik"
                 android:background="@drawable/layout_conner_red"
                 android:textStyle="bold"
                 android:textColor="@color/white"/>
@@ -666,7 +666,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:layout_marginTop="315dp"
-                android:text="Lihat Semua"
+                android:text="@string/lihat_semua"
                 android:textColor="@color/green_gojek"
                 android:background="@color/white"
                 app:backgroundTint="@null"
@@ -681,7 +681,7 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/kejar_diskon"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <ImageView

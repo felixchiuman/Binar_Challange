@@ -376,7 +376,7 @@
                     android:layout_margin="8dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="36 XP lagi ada Harta Karun"
+                    android:text="@string/_36_xp_lagi_ada_harta_karun"
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
 
@@ -411,7 +411,7 @@
                 android:layout_margin="16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Akses Cepat"
+                android:text="@string/akses_cepat"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="18sp"/>
@@ -442,7 +442,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8sp"
-                    android:text="Ada voucher nganggur, nih"/>
+                    android:text="@string/ada_voucher_nganggur_nih"/>
 
                 <ImageButton
                     android:id="@+id/discount_next"
@@ -472,7 +472,7 @@
                     android:layout_marginTop="56sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Restoran terdekat" />
+                    android:text="@string/restoran_terdekat" />
 
                 <ImageButton
                     android:id="@+id/gofood_next"

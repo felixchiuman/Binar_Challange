@@ -23,4 +23,21 @@
     <string name="cari_powerbank">Cari Powerbank</string>
     <string name="rp50_000">Rp50.000</string>
     <string name="kejar_diskon_nberakhir_dalam"><b>Kejar Diskon\n</b>Berakhir dalam</string>
+    <string name="restoran_terdekat">Restoran terdekat</string>
+    <string name="ada_voucher_nganggur_nih">Ada voucher nganggur, nih</string>
+    <string name="akses_cepat">Akses Cepat</string>
+    <string name="_36_xp_lagi_ada_harta_karun">36 XP lagi ada Harta Karun</string>
+    <string name="_50_000_coins">50.000 Coins</string>
+    <string name="member_gold">Member Gold</string>
+    <string name="_20_kupom">20 Kupom</string>
+    <string name="official_nstore">Official\nStore</string>
+    <string name="lihat_nsemua">Lihat\nSemua</string>
+    <string name="kebutuhan">Kebutuhan</string>
+    <string name="phone_amp_tablet"><![CDATA[Phone &Tablet]]></string>
+    <string name="top_up">Top-Up</string>
+    <string name="keuangan">Keuangan</string>
+    <string name="travel">Travel</string>
+    <string name="video_menarik_untukmu">Video menarik untukmu</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="_09_menit_26_detik">09 Menit 26 Detik</string>
 </resources>
